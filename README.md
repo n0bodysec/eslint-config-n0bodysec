@@ -14,7 +14,7 @@ This the base [ESLint](https://eslint.org/) configuration I use in personal Java
 1. Install the package and its minimum required peer dependencies:
 
 ```bash
-npm install -D n0bodysec/eslint-config-n0bodysec eslint prettier eslint-plugin-import
+npm install -D n0bodysec/eslint-config-n0bodysec eslint eslint-plugin-import
 ```
 
 2. Extend this package in your [ESLint configuration](https://eslint.org/docs/user-guide/configuring).
