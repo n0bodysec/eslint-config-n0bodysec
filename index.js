@@ -21,5 +21,8 @@ module.exports = {
 		'prefer-destructuring': 0,
 		'class-methods-use-this': 0,
 		'arrow-body-style': 0,
+		'prefer-arrow-callback': 0,
+		'no-param-reassign': 0,
+		'no-plusplus': 0,
 	},
 };
