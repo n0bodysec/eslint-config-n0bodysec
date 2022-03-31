@@ -6,6 +6,11 @@ module.exports = {
 		node: true,
 	},
 
+	parserOptions: {
+		ecmaVersion: 'latest',
+		sourceType: 'module',
+	},
+
 	extends: 'airbnb-base',
 
 	rules: {
