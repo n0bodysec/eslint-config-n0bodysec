@@ -19,6 +19,7 @@ module.exports = {
 		'no-tabs': ['error', { allowIndentationTabs: true }],
 		'no-console': 0,
 		'import/no-dynamic-require': 0,
+		'import/extensions': ['error', 'ignorePackages', { js: 'always', mjs: 'always', cjs: 'never' }],
 		'prefer-template': 0,
 		'func-names': 0,
 		'space-before-function-paren': 0,
