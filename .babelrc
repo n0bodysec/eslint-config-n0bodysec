@@ -1,5 +1,5 @@
 {
 	"presets": [
-		"n0bodysec"
+		"@n0bodysec"
 	]
 }
