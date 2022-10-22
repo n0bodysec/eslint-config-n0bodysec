@@ -1,5 +1,4 @@
 module.exports = {
-
 	env: {
 		commonjs: true,
 		es2022: true,
@@ -26,5 +25,15 @@ module.exports = {
 		'prefer-arrow-callback': 'off',
 		'no-param-reassign': 'off',
 		'no-plusplus': 'off',
+		'object-curly-newline': ['error', {
+			ObjectExpression: { minProperties: 4, multiline: true, consistent: true },
+			ObjectPattern: { minProperties: 4, multiline: true, consistent: true },
+			ImportDeclaration: 'never',
+			ExportDeclaration: 'never',
+		}],
 	},
+
+	overrides: [
+		Object.assign({ files: ['**/*.ts'] }, require('./typescript.js')),
+	],
 };

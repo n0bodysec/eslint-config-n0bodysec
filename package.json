@@ -1,9 +1,9 @@
 {
   "name": "@n0bodysec/eslint-config",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "A mostly reasonable approach to my own JavaScript/TypeScript code-style.",
   "main": "index.js",
-  "packageManager": "yarn@3.2.3",
+  "packageManager": "yarn@3.2.4",
   "homepage": "https://github.com/n0bodysec/eslint-config-n0bodysec#readme",
   "repository": "https://github.com/n0bodysec/eslint-config-n0bodysec.git",
   "bugs": "https://github.com/n0bodysec/eslint-config-n0bodysec/issues",
@@ -25,6 +25,6 @@
     "eslint-plugin-import": ">= 2"
   },
   "devDependencies": {
-    "eslint": "^8.24.0"
+    "eslint": "^8.26.0"
   }
 }
