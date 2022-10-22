@@ -32,20 +32,6 @@ module.exports = {
 		'plugin:@typescript-eslint/recommended',
 		'plugin:import/typescript',
 	],
-	rules: {
-		'import/extensions': ['error', 'ignorePackages', {
-			js: 'never', mjs: 'never', jsx: 'never', ts: 'never', tsx: 'never',
-		}],
-	},
-	overrides: [{
-		files: ['**/*.ts', '**/*.tsx'],
-		rules: {
-			'no-unused-vars': 'off',
-			'no-useless-constructor': 'off',
-			'@typescript-eslint/no-unused-vars': 'error',
-			'@typescript-eslint/no-useless-constructor': 'error',
-		},
-	}],
 };
 
 ```
