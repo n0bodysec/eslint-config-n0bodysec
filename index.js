@@ -35,6 +35,6 @@ module.exports = {
 	},
 
 	overrides: [
-		Object.assign({ files: ['**/*.ts'] }, require('./typescript.js')),
+		{ files: ['**/*.ts'], ...require('./typescript.js') },
 	],
 };
