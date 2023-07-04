@@ -14,6 +14,7 @@ module.exports = {
 
 	rules: {
 		'import/no-dynamic-require': 'off',
+		'import/prefer-default-export': 'off',
 		'brace-style': ['error', 'allman', { allowSingleLine: true }],
 		indent: ['error', 'tab', { SwitchCase: 1 }],
 		'no-tabs': ['error', { allowIndentationTabs: true }],
