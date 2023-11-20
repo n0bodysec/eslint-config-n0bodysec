@@ -1,6 +1,6 @@
 {
   "name": "@n0bodysec/eslint-config",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "A mostly reasonable approach to my own JavaScript/TypeScript code-style.",
   "main": "index.js",
   "homepage": "https://github.com/n0bodysec/eslint-config-n0bodysec#readme",
