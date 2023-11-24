@@ -8,5 +8,6 @@ module.exports = {
 		'@typescript-eslint/no-unused-vars': 'error',
 		'@typescript-eslint/no-useless-constructor': 'error',
 		'@typescript-eslint/no-shadow': 'error',
+		'@typescript-eslint/consistent-type-imports': 'error',
 	},
 };
