@@ -1,41 +1,21 @@
 module.exports = {
-	env: {
-		commonjs: true,
-		es2022: true,
-		node: true,
-	},
+	extends: [
+		'./lib/javascript',
+	].map(require.resolve),
 
 	parserOptions: {
-		ecmaVersion: 'latest',
+		ecmaVersion: 2018,
 		sourceType: 'module',
 	},
 
-	extends: 'airbnb-base',
-
-	rules: {
-		'import/no-dynamic-require': 'off',
-		'import/prefer-default-export': 'off',
-		'brace-style': ['error', 'allman', { allowSingleLine: true }],
-		indent: ['error', 'tab', { SwitchCase: 1 }],
-		'no-tabs': ['error', { allowIndentationTabs: true }],
-		'no-console': 'off',
-		'prefer-template': 'off',
-		'func-names': 'off',
-		'max-len': 'off',
-		'prefer-destructuring': 'off',
-		'prefer-arrow-callback': 'off',
-		'no-param-reassign': 'off',
-		'no-plusplus': 'off',
-		'no-continue': 'off',
-		'object-curly-newline': ['error', {
-			ObjectExpression: { minProperties: 4, multiline: true, consistent: true },
-			ObjectPattern: { minProperties: 4, multiline: true, consistent: true },
-			ImportDeclaration: 'never',
-			ExportDeclaration: 'never',
-		}],
-	},
+	rules: {},
 
 	overrides: [
-		{ files: ['**/*.ts'], ...require('./typescript.js') },
+		{
+			files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
+			extends: [
+				'./lib/typescript',
+			].map(require.resolve),
+		},
 	],
 };

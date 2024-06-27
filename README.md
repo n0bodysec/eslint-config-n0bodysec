@@ -4,40 +4,46 @@ This the base [ESLint](https://eslint.org/) configuration I use in personal Java
 
 ## 🚀 Usage
 
-1. Install the package and its minimum required peer dependencies:
+1. Install eslint v8 (v9 is not yet supported):
 ```shell
-npm install -D @n0bodysec/eslint-config eslint-plugin-import eslint
+npm install --save-dev eslint@8.57.0
 ```
 
-2. Extend this package in your [ESLint configuration](https://eslint.org/docs/user-guide/configuring).
+2. Setup airbnb config the normal way:
+```shell
+# npm info "eslint-config-airbnb-base@latest" peerDependencies
+npm install --save-dev eslint-plugin-import eslint-config-airbnb-base 
+```
+
+3. **(TypeScript only)** Install airbnb-typescript:
+```shell
+# npm info "eslint-config-airbnb-typescript@latest" peerDependencies
+npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-airbnb-typescript
+```
+
+4. Install the package and its minimum required peer dependencies:
+```shell
+npm install -D @n0bodysec/eslint-config
+```
+
+5. Extend this package in your [ESLint configuration](https://eslint.org/docs/user-guide/configuring).
 ```json
 "extends": "@n0bodysec"
 ```
 
-### TypeScript Support
+### Example config
 
-1. Install the following dev dependencies:
-```shell
-npm install -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
-```
-
-2. Setup your `.eslintrc.js` file:
 ```js
 module.exports = {
-	plugins: ['@typescript-eslint'],
-	parser: '@typescript-eslint/parser',
 	extends: [
+		'airbnb',
+		'airbnb-typescript',
 		'@n0bodysec',
-		'eslint:recommended',
-		'plugin:@typescript-eslint/recommended-type-checked',
-		'plugin:import/typescript',
+		'plugin:@typescript-eslint/recommended-type-checked',                // @typescript-eslint @v6
+		'plugin:@typescript-eslint/stylistic-type-checked',                  // @typescript-eslint @v6
+		// 'plugin:@typescript-eslint/recommended',                          // @typescript-eslint @v5
+		// 'plugin:@typescript-eslint/recommended-requiring-type-checking',  // @typescript-eslint @v5
 	],
-	parserOptions: {
-		project: true,
-		tsconfigRootDir: __dirname,
-	},
-	root: true,
-	ignorePatterns: ['node_modules', 'dist'],
 };
 ```
 
@@ -48,8 +54,3 @@ You can read the [commits](../../commits).
 ## 📜 License
 
 Licensed under [MIT License](LICENSE.md).
-
-## 📞 Contact
-
-Feel free to give me feedback.  
-[Issues](../../issues) or [Discussions](../../discussions).
