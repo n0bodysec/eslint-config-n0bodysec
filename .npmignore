@@ -1,4 +1,4 @@
 *
-!/.eslintrc
+!/eslint.config.mjs
 !/index.js
 !/lib/**/*
