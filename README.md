@@ -12,7 +12,7 @@ This the base [ESLint](https://eslint.org/) configuration I use in personal Java
 npm install --save-dev eslint eslint-config-airbnb-base
 
 # TypeScript Only!
-npm install --save-dev https://github.dev/claabs/eslint-config-airbnb-typescript-x.git
+npm install --save-dev https://github.dev/claabs/eslint-config-airbnb-typescript-x.git eslint-import-resolver-typescript
 ```
 
 2. Install the package:
